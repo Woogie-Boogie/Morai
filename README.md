@@ -22,7 +22,7 @@ v4.4.210806.H2 버전을 설치
 
 [세이브 파일 덮어쓰기]
 첨부된 세이브 파일을 Morai 시뮬 런쳐 폴더에 덮어 씌우기
-Sensor와 Network json 파일을 VS code로 열어 172.21.214.222를 자기 아이피로 모두 대체해야 함
+Sensor와 Network json 파일을 VS code로 열어 Rosbridge IP 를 자기 아이피로 모두 대체해야 함
 
 09. roslaunch rosbridge_server rosbridge_websocket.launch
 실행 후, Morai 시뮬 실행하고 차 및 맵을 선택 후 들어가면  9개의 클라이언트가 됨 
@@ -30,14 +30,19 @@ TF2Publisher 해제, Disconnect 후 Connect 하면 8개의 클라이언트가 �
 
 
 [예제]
+
 10. rostopic list
 명령할 수 있는 명령어를 보여준다.
+
 11. rostopic pub -r 5 /commands/servo/position std_msgs/Float64 "data: 0.0"
 왼쪽으로 바퀴 방향을 튼다.
+
 11. rostopic pub -r 5 /commands/servo/position std_msgs/Float64 "data: 1.0"
 오른쪽으로 바퀴 방향을 튼다.
+
 12. rostopic pub -r 5 /commands/motor/speed std_msgs/Float64 "data: 2000.0"
 오른쪽 앞으로 회전한다.
+
 12. rostopic pub -r 5 /commands/motor/speed std_msgs/Float64 "data: -2000.0"
 오른쪽 뒤로 회전한다.
 

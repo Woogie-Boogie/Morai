@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 Morai Simulation
 
+설치 : https://help-morai-sim.scrollhelp.site/morai-sim-standard-kr/
+
+
 Morai Simulation 교육 중
 - 윈도우 10, wsl과 xlaunch를 사용한 Ubuntu 18.04 환경
 

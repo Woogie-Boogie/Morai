@@ -1,5 +1,5 @@
 # Morai
-# -*- coding: utf-8 -*-
+
 Morai Simulation
 
 설치 : https://help-morai-sim.scrollhelp.site/morai-sim-standard-kr/
